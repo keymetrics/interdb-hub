@@ -1,0 +1,25 @@
+{
+  "name": "interdb-hub",
+  "version": "0.0.1",
+  "description": "Hub for InterDB clients",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "docker-build": "docker build -t keymetrics-envision/interdb-hub:latest .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keymetrics-envision/interdb-hub.git"
+  },
+  "author": "Florian H-J",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keymetrics-envision/interdb-hub/issues"
+  },
+  "homepage": "https://github.com/keymetrics-envision/interdb-hub#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "redis": "^2.8.0"
+  }
+}
