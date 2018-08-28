@@ -2,7 +2,8 @@ const redis = require('redis')
 const express = require('express')
 
 const client = redis.createClient({
-  host: process.env.HUB_REDIS_HOST
+  host: process.env.HUB_REDIS_HOST,
+  port: process.env.HUB_REDIS_PORT || 6379
 })
 const app = express()
 
